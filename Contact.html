@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+
+    <style>
+    img {
+      float: left;
+    }
+    </style>
+    <link rel="stylesheet" href="css/project 2.css">
+    <link rel="stylesheet" href="css/page1.css">
+      <link href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pg1-2.html">About</a></li>
+      <li><a href="Works.html">Works</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+       
+    </ul>
+
+<!--<div class="navbar">
+    <table>
+      <tr>
+
+        <td><a href="Works.html"><</a></td>
+
+        <td><a href="accessibility-guide.html">></a></td>
+      </tr>
+    </table>
+  </div>
+-->
+
+<div id="book-wrapper">
+
+        <div class="about-me-left"><center> <h1>Contact</h1></center>
+
+
+
+<div id="container-contact1"><a href="https://github.com/Arguetaej/EA.Code">Edie Argueta GitHub Repositories<a/>
+  <img src="images/GitHub_Logo.png" alt="Linked In logo. white letters on blue background" style="width:70px;height:50px;margin-right:15px;">
+</div>
+
+            <div id="container-contact2"><a href="www.linkedin.com/in/edie-j-argueta-bb621912">Edie Argueta LinkedIn Profile Page<a/>
+              <img src="images/LI-In-Bug.png" alt="Linked In logo. white letters on blue background" style="width:50px;height:50px;margin-right:15px;">
+            </div>
+
+
+
+                    <div id="container-contact3"><a href="images/EAResume.pdf">Edie Argueta Resume!</a>
+                      <img src="images/pdf-logo.png" alt="pdf logo in black on transparent background" style="width:50px;height:50px;margin-right:15px;">
+                    </p>
+                    </div>
+
+                    <div id="container-contact4">ArguetaEJ@yahoo.com
+                      <img src="images/yemail.jpg" alt="Yahoo email Logo. white envelope on purple background " style="width:50px;height:50px;margin-right:15px;">
+                    </p>
+                    </div>
+      </div>
+
+
+
+
+
+
+
+  <div class="about-me">
+<center> <h1>Contact</h1></center>
+    <form onsubmit="return validateForm()" method="post" class="form-example" id="info-contact">
+
+
+
+
+
+      <div class="form-example" id="form">
+      <label for="fn">First Name:</label>
+      <input type="text" name="fname"  id="fn">
+      </div>
+      <br>
+      <div class="form-example">
+      <label for="ln">Last Name:</label>
+      <input type="text" name="lname" id="ln">
+      </div>
+      <br>
+      <div class="form-example">
+      <label for="fn">E-Mail:</label>
+      <input type="email" name="email"  id="eml">
+      </div>
+      <br>
+      <div class="form-example">
+      <label for="fn">Phone Number:</label>
+      <input type="tel" id="phone" name="pnumber"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required
+       placeholder="123-456-7890"
+       >
+       </div>
+       <br>
+       <div class="form-example">
+       <label for="fn">Your https// URL</label>
+       <input type="url" name="url" id="url"
+       placeholder="https://example.com"
+       pattern="https://.*" size="30"
+       required>
+       </div>
+       <br>
+       <div class="form-example">
+       <label for="fn">Other https// URL:</label>
+       <input type="url" name="url" id="url"
+       placeholder="https://example.com"
+       pattern="https://.*" size="30"
+       required>
+       </div>
+
+       <div class="form-example">
+       <label for="tarea"> Message:</label>
+       <textarea name="tarea" rows="4" cols="30" form="info-contact" id="tarea">Enter Your Comments here!</textarea>
+     </div>
+
+     <input type="submit" name="" value="Submit">
+
+
+
+
+</form>
+
+   </div>
+</div>
+
+
+<script>
+
+function validateForm() {
+  var t = document.forms["form"]["fn"].value;
+  var u = document.forms["form"]["ln"].value;
+  var v =	document.forms["form"]["eml"].value;
+  var w =	document.forms["form"]["phone"].value;
+
+  if (t == "") {
+  alert("First name must be filled out")
+  return false;
+};
+
+ if(u==""){
+  alert("Last name must be filled out")
+  return false;
+};
+
+ if(v==""){
+  alert("Enter email")
+  return false;
+}
+if(w==""){
+  alert("Enter Phone Number")
+  return false;
+}
+
+
+
+
+
+
+
+  };
+</script>
+
+  </body>
+</html>
